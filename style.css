@@ -92,3 +92,7 @@ padding: 8px 12px;
 border-radius: 10px;
 cursor: pointer;
 }
+
+.hero {
+padding: 60px 0;
+}
