@@ -55,3 +55,7 @@ text-decoration: none;
 color: var(--primary-700);
 font-size: 1.2rem;
 }
+
+.logo-dot {
+color: var(--primary);
+}
