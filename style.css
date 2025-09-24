@@ -99,4 +99,7 @@ padding: 60px 0;
 
 .hero-inner {
 display: grid; /* uso de grid combinado com flex */
-grid-template-columns: 1fr 420px; /* colunas
+grid-template-columns: 1fr 420px; /* colunas responsivas */
+align-items: center;
+gap: 40px;
+}
