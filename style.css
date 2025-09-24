@@ -2,3 +2,13 @@
   box-sizing:  border-box;
 }
 
+html, body {
+margin: 0; /* zera margens do navegador */
+padding: 0;
+height: 100%;
+font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+background: linear-gradient(180deg, #f6f8fb 0%, #ffffff 100%);
+color: #222;
+}
