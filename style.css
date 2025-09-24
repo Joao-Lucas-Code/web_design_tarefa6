@@ -83,3 +83,12 @@ background: rgba(11,116,255,0.08);
 outline: none; /* demonstra como remover outline, mas cuidado com acessibilidade */
 transform: translateY(-2px); /* animação sutil */
 }
+
+.nav-toggle {
+display: none; /* oculto em desktop */
+background: transparent;
+border: 1px solid rgba(11,116,255,0.12);
+padding: 8px 12px;
+border-radius: 10px;
+cursor: pointer;
+}
