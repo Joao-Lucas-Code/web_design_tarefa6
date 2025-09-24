@@ -10,5 +10,5 @@ font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Ari
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 background: linear-gradient(180deg, #f6f8fb 0%, #ffffff 100%);
-color: #222;
+color: #1e1e1e;
 }
