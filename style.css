@@ -96,3 +96,7 @@ cursor: pointer;
 .hero {
 padding: 60px 0;
 }
+
+.hero-inner {
+display: grid; /* uso de grid combinado com flex */
+grid-template-columns: 1fr 420px; /* colunas
