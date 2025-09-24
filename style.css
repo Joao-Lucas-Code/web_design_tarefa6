@@ -47,3 +47,11 @@ justify-content: space-between; /* espaça logo e nav */
 gap: 16px;
 padding: 12px 0;
 }
+
+.logo {
+font-weight: 700;
+letter-spacing: 0.6px;
+text-decoration: none;
+color: var(--primary-700);
+font-size: 1.2rem;
+}
