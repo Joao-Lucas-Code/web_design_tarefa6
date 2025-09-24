@@ -68,3 +68,11 @@ display: flex;
 gap: 12px; /* espaçamento entre itens do menu */
 align-items: center;
 }
+
+.main-nav a {
+text-decoration: none;
+color: #0f1724;
+padding: 8px 10px;
+border-radius: 8px;
+transition: background 180ms ease, transform 150ms ease; /* transições para interatividade */
+}
