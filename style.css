@@ -76,3 +76,10 @@ padding: 8px 10px;
 border-radius: 8px;
 transition: background 180ms ease, transform 150ms ease; /* transições para interatividade */
 }
+
+.main-nav a:hover,
+.main-nav a:focus {
+background: rgba(11,116,255,0.08);
+outline: none; /* demonstra como remover outline, mas cuidado com acessibilidade */
+transform: translateY(-2px); /* animação sutil */
+}
