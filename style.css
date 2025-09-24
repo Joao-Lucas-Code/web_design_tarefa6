@@ -59,3 +59,12 @@ font-size: 1.2rem;
 .logo-dot {
 color: var(--primary);
 }
+
+.main-nav ul {
+list-style: none; /* removendo marcadores */
+margin: 0;
+padding: 0;
+display: flex;
+gap: 12px; /* espaçamento entre itens do menu */
+align-items: center;
+}
