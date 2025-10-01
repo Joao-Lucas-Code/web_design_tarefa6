@@ -17,79 +17,111 @@
       <a href="#home" class="logo" aria-label="Ir para início">GK<span class="logo-dot">.</span></a>
       <nav class="main-nav" aria-label="Menu principal">
         <ul>
+
           <li><a href="#home">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
+
         </ul>
+
       </nav>
+
       <button class="btn btn-primary nav-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button>
     </div>
+
   </header>
 
   <!-- Seção Hero -->
   <section id="home" class="hero">
+
     <div class="container hero-inner">
+
       <div class="hero-content">
+
         <h1>Olá, nós somos o <strong>Grupo H</strong></h1>
         <p class="lead">Estudantes de Engenharia de Computação — projetos de Web, IoT e programação. Este é um projeto demonstrativo com muitas propriedades CSS aplicadas.</p>
+
         <div class="hero-actions">
           <a href="#projetos" class="btn btn-secondary">Ver projetos</a>
           <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+
       </div>
+
     </div>
+
     <figure class="hero-figure" aria-hidden="true">
+
       <!-- figura ilustrativa: caixa com gradiente e sombra -->
+
       <div class="device-mock">
         <div class="screen">
           <p>Preview do projeto</p>
         </div>
+
       </div>
+
     </figure>
+
     </div>
   </section>
 
   <!-- Seção Sobre -->
   <section id="sobre" class="sobre rhythm">
+
     <div class="container">
+
       <h2>Sobre o projeto</h2>
+
       <p>Projeto criado para demonstrar uso de propriedades CSS como
         <code>flexbox</code>, <code>grid</code>, <code>box-shadow</code>,
         <code>transitions</code>, <code:hover</code>, <code>pseudo-elements</code> e
         técnicas de responsividade com <code>@media</code>.
+
       </p>
+
       <div class="cards">
+
         <!-- Card 1 -->
+
         <article class="card">
           <h3>Layout responsivo</h3>
           <p>Uso de unidades relativas, breakpoints e comportamento
             adaptativo para telas pequenas.</p>
         </article>
+
         <!-- Card 2 -->
+
         <article class="card">
           <h3>Interatividade</h3>
           <p>Transições, hover effects e foco para tornar a navegação mais
             agradável.</p>
         </article>
+
         <!-- Card 3 -->
+
         <article class="card">
           <h3>Acessibilidade</h3>
           <p>Contraste de cores, estados de foco e atributos ARIA quando
             aplicável.</p>
         </article>
+
       </div>
 
     </div>
 </section>
 
   <!-- Seção Projetos com Grid -->
+
   <section id="projetos" class="projetos rhythm">
   <div class="container">
     <h2>Projetos</h2>
     <p class="muted">Alguns trabalhos relevantes nossos</p>
 
     <div class="project-grid">
+
       <!-- cada .project demonstra uso de grid-gap, aspect-ratio, flex dentro de grid, posição relativa -->
+
       <article class="project" tabindex="0">
         <div class="thumb" aria-hidden="true"></div>
         <h3>Garagem Inteligente (IoT)</h3>
@@ -119,6 +151,7 @@
 
 
     <!-- botão que demonstra pseudo-class :hover e :focus -->
+
     <div class="more">
       <a href="#" class="btn btn-primary">Ver mais</a>
     </div>
@@ -126,6 +159,7 @@
 </section>
 
   <!-- Seção de contato com formulário simples (sem backend) -->
+
   <section id="contato" class="contato rhythm">
     <div class="container">
       <h2>Contato</h2>
@@ -133,8 +167,11 @@
 
 
       <form class="form" action="#" method="post" onsubmit="return false;" aria-label="Formulário de contato">
+
         <!-- Usamos label explícito para acessibilidade -->
+
         <div class="form-grid">
+
           <label for="nome">Nome</label>
           <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
 
@@ -146,11 +183,14 @@
 
           <label for="mensagem">Mensagem</label>
           <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..."></textarea>
+
         </div>
 
         <div class="form-actions">
+
           <button class="btn btn-primary" type="submit">Enviar</button>
           <button class="btn btn-outline" type="reset">Limpar</button>
+
         </div>
 
       </form>
@@ -159,9 +199,13 @@
   </section>
 
   <!-- Footer com informações e links -->
+
   <footer class="site-footer">
+
     <div class="container footer-inner">
+
       <p>© 2025 Grupo H — Tarefa 6 de Web Design. <span class="muted">Feito com HTML e CSS.</span></p>
+
       <nav class="footer-nav" aria-label="Links do rodapé">
         <ul>
           <li><a href="#">Política</a></li>
@@ -169,8 +213,38 @@
           <li><a href="#">Ajuda</a></li>
         </ul>
       </nav>
+
     </div>
+
   </footer>
+
+  <!-- Pequeno script para demonstrar toggle do menu em telas menores -->
+
+  <script>
+
+    // script simples para alternar a navegação (demonstrar manipulação de atributos aria e classes)
+
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+      btn.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+    });
+
+
+    // acessibilidade: fechar menu ao clicar fora (exemplo simples)
+
+    document.addEventListener('click', (e) => {
+      if (!btn.contains(e.target) && !nav.contains(e.target)) {
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+      
+    });
+    </script>
+
+    <!-- FIM DO ARQUIVO -->
 
 </body>
 </html>
