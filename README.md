@@ -124,11 +124,6 @@ Este projeto demonstra:
 5. **Organização e estruturação de código**
 6. **Versionamento com Git/GitHub**
 
-## 👨‍💻 Autor
-
-**João Lucas**  
-Estudante de Engenharia de Computação
-
 ---
 
 📧 **Disciplina:** Web Design  
